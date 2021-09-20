@@ -8,7 +8,7 @@ from rest_framework import routers
 
 
 urlpatterns = [
-    path('recipes/', views.listRecipes.as_view()),
-    path('recipes/<name>', views.DetailRecipes.as_view()),
+    path('recipes/', views.listRecipes),
+    path('recipes/detail/<name>', views.DetailRecipes.as_view()),
 
 ]
